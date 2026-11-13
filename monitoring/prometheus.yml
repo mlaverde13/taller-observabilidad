@@ -3,6 +3,6 @@ global:
 
 scrape_configs:
   - job_name: 'flask-app'
+    fallback_scrape_protocol: PrometheusText0.0.4
     static_configs:
       - targets: ['app:8000']
-# despliegue de prueba
